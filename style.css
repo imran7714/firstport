@@ -1,0 +1,163 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root{
+--primary: #29e9bc;
+--normal: #ffffff;
+--black: #13131a;
+--bg: black;
+--danger: red;
+border : 0.1rem solid  rgba(255,255,255,0.3);
+
+
+
+--containerwidelaptop: 80%;
+--containerwidetab: 90%;
+--containerwidephone: 94%;
+}
+*{
+ font-family: 'Roboto', sans-serif;
+   margin: 0%;
+   padding: 0%;
+   outline-offset: none;
+   border: none;
+   box-sizing: border-box;
+   text-decoration: none;
+   text-transform: capitalize;
+   list-style: none;
+   transition: all 0.5 linear;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar{
+   width: 7px;
+
+}
+::-webkit-scrollbar-track{
+   background: var(--normal);
+
+}
+::-webkit-scrollbar-thumb{
+
+   background: var(--primary);
+}
+::-webkit-scrollbar-thumb:hover{
+   background: #13131a;
+
+}
+
+body{
+
+   line-height: 1.7;
+   background-color: #18131a;
+}
+.container{
+
+   width: var(--containerwidelaptop);
+   margin: 0 auto;
+}
+section{
+
+   padding: 6rem,  0;
+}
+section.h2{
+   text-align: center;
+   margin-bottom: 4rem;
+}
+h2,h3,h4,h5{
+   line-height: 1.5;
+
+}
+h1{
+   font-size: 2rem;
+}
+h2{
+   font-size: 1.4rem;
+}
+h3{
+   font-size: 1.6rem;
+}
+h4{
+   font-size: 1.3rem;
+}
+a{
+   color: #ffffff;
+}
+image{
+   width: 100%;
+   display: block;
+}
+.btn{
+   display: inline-block;
+   background-color: var(--primary);
+   color: var(--black);
+   padding: 0.5rem 2rem;
+   border-radius: 40px;
+
+   font-weight: 500;
+}
+.btn:hover{
+background-color: rgb(16, 135, 99);
+color: white;
+
+}
+.borderbottom{
+   align-items: center;
+   display: inline-block;
+   border-bottom: 2px solid var(--primary);
+   color: var(--primary);
+   margin-bottom: 2.5rem;
+}
+
+nav{
+
+   background-color: var(--black);
+   width: 100vw;
+   height: 5rem;
+   position: fixed;
+   z-index: 1000;
+}
+.nav_container{
+
+   display: flex;
+   height: 100%;
+   justify-content: space-between;
+   align-items: center;
+}
+.nav_container span{
+   color: var(--primary);
+}
+.nav_container h4{
+   font-size: 2rem;
+}
+.nav_container h4::first-letter{
+   font-size: 2.5rem;
+}
+.nav_container h4:hover{
+   font-size: 2.5rem;
+   color: #29e9bc;
+   transition: 0.5s;
+}
+nav button{
+   display: none;
+
+}
+.navmenu{
+
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+   font-size: 1rem;
+   font-size: 1.2rem;
+
+
+}
+.navmenu a{
+   font-size: 1.2rem;
+}
+.navmenu a:hover{
+
+   color: var(--primary);
+   border-top: 3px solid var(--primary);
+   transition: 0.5s;
+}
